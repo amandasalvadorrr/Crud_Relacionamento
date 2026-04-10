@@ -1,4 +1,9 @@
-package com.weg.crud_relacionamento.dto;
+package com.weg.crud_relacionamento.dto.request;
 
-public class AssentoRequest {
+import jakarta.validation.constraints.NotBlank;
+
+public record AssentoRequestDto(
+        @NotBlank(message = "O código é obrigatório")
+        String codigo
+){
 }

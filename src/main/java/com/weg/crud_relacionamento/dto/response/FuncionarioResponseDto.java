@@ -1,4 +1,9 @@
 package com.weg.crud_relacionamento.dto.response;
 
-public class FuncionarioResponseDto {
+import java.util.List;
+
+public record FuncionarioResponseDto(
+        Long id,
+        String nome
+) {
 }
