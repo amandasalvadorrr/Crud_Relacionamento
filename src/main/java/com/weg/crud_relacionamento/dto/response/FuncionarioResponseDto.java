@@ -4,6 +4,8 @@ import java.util.List;
 
 public record FuncionarioResponseDto(
         Long id,
-        String nome
+        String nome,
+        Long assentoId,
+        List<Long> projetos
 ) {
 }
